@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - CarePlus Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar" aria-label="Main navigation">
+        <h1>CarePlus Hospital</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="departments.html">Departments</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main class="section">
+    <h2>Request an Appointment</h2>
+
+    <div class="card">
+        <p>Fill in the details below to request an appointment.</p>
+
+        <form action="#" method="get">
+
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname"
+                   autocomplete="name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email"
+                   autocomplete="email" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone"
+                   autocomplete="tel" required>
+
+            <label for="department">Select Department *</label>
+            <select id="department" name="department" required>
+                <option value="">Choose a department</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="neurology">Neurology</option>
+                <option value="general-medicine">General Medicine</option>
+                <option value="dermatology">Dermatology</option>
+            </select>
+
+            <label for="appointment-date">Preferred Date *</label>
+            <input type="date" id="appointment-date"
+                   name="appointment-date" required>
+
+            <label for="appointment-time">Preferred Time</label>
+            <select id="appointment-time" name="appointment-time">
+                <option value="">Choose a time</option>
+                <option value="morning">10:00 AM - 12:00 PM</option>
+                <option value="afternoon">2:00 PM - 4:00 PM</option>
+                <option value="evening">4:00 PM - 6:00 PM</option>
+            </select>
+
+            <label for="message">Reason for Visit</label>
+            <textarea id="message" name="message"
+                      placeholder="Enter a brief message"></textarea>
+
+            <p>
+                Fields marked with * are required.
+                Please do not enter sensitive medical information in this demo form.
+            </p>
+
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 CarePlus Hospital | Sample Website Project</p>
+</footer>
+
+</body>
+</html>

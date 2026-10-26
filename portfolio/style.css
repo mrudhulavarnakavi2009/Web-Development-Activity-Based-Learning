@@ -1,0 +1,161 @@
+
+/* Common Style for All Pages */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+header {
+    background-color: #173b63;
+    padding: 18px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #ffd166;
+}
+
+.home {
+    background-color: #dcecff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.home h1 {
+    color: #173b63;
+}
+
+.home span {
+    color: #e07a32;
+}
+
+.section {
+    padding: 35px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #173b63;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    margin: 18px auto;
+    border-radius: 8px;
+    border: 1px solid #d8e1ec;
+    max-width: 850px;
+    line-height: 1.7;
+}
+
+.card h3 {
+    color: #245b8f;
+}
+
+.project-container,
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 220px;
+}
+
+.skill {
+    background-color: #dcecff;
+    color: #173b63;
+    padding: 18px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #173b63;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e07a32;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    height: 120px;
+}
+
+footer {
+    background-color: #173b63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .home {
+        padding: 55px 15px;
+    }
+}

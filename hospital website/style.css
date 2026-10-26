@@ -1,0 +1,180 @@
+
+/* Common Style for Hospital Website */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f8fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #075b70;
+    padding: 18px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #ffe08a;
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #d9f0f5;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h2 {
+    color: #075b70;
+    font-size: 30px;
+}
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.section h2 {
+    color: #075b70;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #cbdde5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 12px 0;
+    flex: 1;
+    min-width: 220px;
+    line-height: 1.6;
+}
+
+.card h3 {
+    color: #075b70;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #075b70;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #0a788e;
+}
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #899da8;
+    border-radius: 5px;
+    font: inherit;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 3px solid #9bd9e6;
+    border-color: #075b70;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+footer {
+    background-color: #075b70;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 20px 12px;
+    }
+}
