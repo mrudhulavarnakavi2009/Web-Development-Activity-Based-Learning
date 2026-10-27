@@ -170,20 +170,3 @@ td img {
     color: #d8f3dc;
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        justify-content: center;
-    }
-
-    table {
-        font-size: 13px;
-    }
-
-    th, td {
-        padding: 6px;
-    }
-}

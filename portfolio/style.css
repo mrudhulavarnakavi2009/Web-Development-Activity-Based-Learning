@@ -146,16 +146,3 @@ footer {
     margin-top: 30px;
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        justify-content: center;
-    }
-
-    .home {
-        padding: 55px 15px;
-    }
-}

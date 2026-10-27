@@ -156,25 +156,3 @@ footer p {
     margin: 5px;
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .hero {
-        padding: 40px 15px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .section {
-        padding: 20px 12px;
-    }
-}
